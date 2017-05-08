@@ -1,3 +1,7 @@
+html {
+	font-size: 16px;
+}
+
 .light-blue {
 	color: #13b3dd;
 }
@@ -95,12 +99,6 @@ section.controls {
 	padding: 14px;
 }
 
-/*.custom-control-indicator {
-	background-color: #fff;
-	border: 1px solid #7f7f7f;
-	border-radius: 0;
-}*/
-
 .custom-checkbox .custom-control-indicator {
 	background-color: #fff;
 	border: 1px solid #7f7f7f;
@@ -126,6 +124,83 @@ section.controls {
 	box-shadow: none;
 }
 
+.card {
+	transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 0 0 12px rgba(13, 176, 218, 0.4);
+	transform: scale(1.05);
+}
+
+.card-img-top {
+	border: 1px solid #ebebeb;
+}
+
+p.card-id,
+p.card-name {
+	display: inline-block;
+}
+
+button.custom {
+	background: 0 0;
+	border: none;
+	border-radius: 2px;
+	color: #757575;
+	position: relative;
+	height: 36px;
+	margin: 0;
+	min-width: 64px;
+	padding: 0 16px;
+	display: inline-block;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	overflow: hidden;
+	will-change: box-shadow;
+	transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	line-height: 36px;
+	vertical-align: middle;
+}
+
+button.custom:hover {
+	background-color: rgba(158,158,158,.2);
+}
+
+button.custom:active {
+	background-color: rgba(158,158,158,.4);
+}
+
+button.icon-btn {
+	border-radius: 50%;
+	font-size: 1rem;
+	height: 26px;
+	margin-left: 0;
+	margin-right: 0;
+	min-width: 26px;
+	width: 26px;
+	padding: 0;
+	overflow: hidden;
+	line-height: normal;
+}
+
+button.icon-btn .material-icons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-12px,-12px);
+	transform: translate(-12px,-12px);
+	line-height: 24px;
+	width: 24px;
+	vertical-align: middle;
+}
+
 footer {
 	background-color: #2f323b;
 }
@@ -137,6 +212,7 @@ footer .container {
 
 footer p {
 	margin-bottom: .5rem;
+	font-size: .875rem;
 }
 
 footer p a {
@@ -161,7 +237,7 @@ footer .social {
 a.icon {
 	width: 32px;
 	height: 32px;
-	margin-right: 1rem;
+	margin-right: .5rem;
 	display: inline-block;
 }
 
@@ -232,7 +308,7 @@ footer .links {
 
 @media (min-width: 1200px){
 	.container {
-		width: 1200px;
+		width: 962px;
 		max-width: 100%;
 	}
 
