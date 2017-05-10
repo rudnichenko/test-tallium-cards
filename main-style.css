@@ -166,6 +166,10 @@ p.card-name {
 	display: inline-block;
 }
 
+.range-container {
+	background-image: url(../img/range-bg.png);
+}
+
 button.custom {
 	background: 0 0;
 	border: none;
